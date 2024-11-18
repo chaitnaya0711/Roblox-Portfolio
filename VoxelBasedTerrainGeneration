@@ -4,15 +4,14 @@ local Players = game:GetService("Players")
 local CHUNKsize = 10
 local RenderDistance = 20
 local waterLVL = 55
-local chunkGenerationDelay = 0.0000000000000000000003
+local chunkGenerationDelay = 0.003
 local chunk_unload_Delay = chunkGenerationDelay
-local updateinterval = 0.00000001
+local updateinterval = 0.001
 local beachthreshold = 3
 local blocksize = 3
 local chunkPixelSize = CHUNKsize * blocksize
 local waterTransparency = 0.5
 local maxCachedchunks = RenderDistance * RenderDistance * 4
-
 local seed = {
 	terain = math.random(100, 999),
 	HEIGHT = math.random(1, 99),
